@@ -15,7 +15,7 @@ from nltk.corpus import stopwords
 # Connection to MySQL using SQLALCHEMY
 def db_connection():
     try:
-        database_url = "mysql+mysqlconnector://root:dinmamma@localhost/ArtiklarDB"
+        database_url = "mysql+mysqlconnector://root:root@localhost/ArtiklarDB"
         engine = create_engine(database_url)
         return engine
     except Exception as err:
